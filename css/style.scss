@@ -1,0 +1,277 @@
+body {
+	margin: 15px 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #C3C3C3 !important;
+	-webkit-print-color-adjust:exact;
+
+	.cv-container {
+		width: 800px;
+		margin: 0 auto;
+		box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75) !important;
+	}
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
+h1, h2, h3, h4, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #124562 !important;
+	color: #fff !important;
+	display: table;
+	width: calc(100% - 30px);
+	padding: 15px;
+	position: relative;
+
+	h1.my-name {
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+
+	.my-description {
+		font-size: 14px;
+		font-style: italic;
+		margin: 10px 0;
+	}
+
+	.my-contact {
+		display: table;
+		width: 100%;
+		padding-top: 5px;
+
+		.contact-item {
+			float: left;
+			padding-right: 20px;
+			font-size: 14px;
+
+			.icon {
+				float: left;
+		    position: relative;
+		    top: -5px;
+		    background: #fff;
+		    border-radius: 100%;
+		    width: 30px;
+		    height: 30px;
+		    text-align: center;
+
+		    img {
+		    	position: relative;
+		    	top: 5px;
+		    }
+			}
+
+			.contact-text {
+				padding-left: 5px;
+			}
+		}
+	}
+
+	.my-image {
+		position: absolute;
+		right: 15px;
+		bottom: -15px;
+
+		img {
+			max-width: 100px;
+			border: 4px solid #C5393A !important;
+		}
+	}
+}
+
+main {
+	background-color: #FFF !important;
+	font-family: 'Roboto', sans-serif;
+	border-color: #f1f1f1 !important;
+	border-style: solid;
+	border-width: 0 1px;
+
+	.section-cols {
+		display: table;
+		width: 100%;
+
+		.section-col {
+			float: left;
+			width: 50%;
+		}
+	}
+
+	section {
+		padding-top: 15px;
+
+		.section-title {
+			padding: 0 15px 10px;
+			margin: 0;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				height: 1px;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				background-color: #ccc !important;
+			}
+		}
+
+		.section-list {
+			.list-item {
+				display: table;
+				padding: 10px 15px;
+				clear: both;
+				background-color: #FFF !important;
+				min-width: calc(100% - 30px);
+
+				&:nth-of-type(even) {
+					background-color: #f1f1f1 !important;
+				}
+
+				.list-item-time {
+					float: left;
+					width: 25%;
+					font-weight: 500;
+					font-size: 15px;
+					color: rgba(0,0,0,.7) !important;
+				}
+
+				.list-item-info {
+					float: right;
+					width: 75%;
+
+					.list-item-info-bold {
+						font-size: 17px;
+						font-weight: 500;
+						color: rgba(0,0,0,.85) !important;
+					}
+
+					.experience-position {
+						font-weight: 400;
+						color: rgba(0,0,0,.7) !important;
+					}
+
+					.list-item-info-description {
+						font-size: 14px;
+						line-height: 22px;
+						margin-top: 5px;
+						font-weight: 400;
+						text-align: justify;
+						color: rgba(0,0,0,.55) !important;
+
+						.projects {
+							a {
+								text-decoration: none;
+								color: rgba(0,0,0,.55) !important;
+								display: inline-block;
+								padding: 0 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		.section-content {
+			display: table;
+			width: calc(100% - 30px);
+			padding: 10px 15px;
+
+			.checkmark-list {
+				float: left;
+				width: 33.3333%;
+				list-style-type: none;
+
+				li {
+					padding-left: 20px;
+					position: relative;
+					color: rgba(0,0,0,0.7);
+					font-size: 14px;
+					line-height: 25px;
+
+					&:before {
+						content: '✓';
+				    position: absolute;
+				    top: 0;
+				    left: 0px;
+				    font-size: 20px
+					}
+				}
+			}
+		}
+
+		&.languages {
+			.section-title {
+				padding-left: 0;
+			}
+
+			.section-content {
+				padding-left: 0;
+			}
+		}
+
+		.skill-list {
+			float: left;
+			width: 50%;
+		}
+		
+		.skill-item {
+			display: table;
+			width: 100%;
+	    color: rgba(0,0,0,0.7);
+			line-height: 30px;
+    	font-size: 14px;
+
+			.skill-name {
+				float: left;
+				width: 40%;
+			}
+
+			.skill-value {
+				float: right;
+				width: 60%;
+
+				i {
+					display: inline-block;
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					background-color: #98969B !important;
+
+					&.check {
+						background-color: #2A292E !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #124562 !important;
+	padding: 15px 20px;
+	color: #fff !important;
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	font-weight: 300;
+
+	p {
+		margin-bottom: 5px;
+	}
+}
