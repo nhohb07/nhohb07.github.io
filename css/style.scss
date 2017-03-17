@@ -34,7 +34,7 @@ header {
 	color: #fff !important;
 	display: table;
 	width: calc(100% - 30px);
-	padding: 15px;
+	padding: 15px 15px 0px;
 	position: relative;
 
 	h1.my-name {
@@ -149,6 +149,12 @@ main {
 					font-weight: 500;
 					font-size: 15px;
 					color: rgba(0,0,0,.7) !important;
+
+					p {
+						font-weight: normal;
+						padding-top: 5px;
+						font-size: 13px;
+					}
 				}
 
 				.list-item-info {
@@ -173,6 +179,10 @@ main {
 						font-weight: 400;
 						text-align: justify;
 						color: rgba(0,0,0,.55) !important;
+
+						ul {
+							padding-left: 25px;
+						}
 
 						.projects {
 							a {
@@ -264,7 +274,7 @@ main {
 
 footer {
 	background-color: #124562 !important;
-	padding: 15px 20px;
+	padding: 15px;
 	color: #fff !important;
 	font-size: 14px;
 	font-style: italic;
